@@ -71,6 +71,7 @@ func is_position_change_aligned_with_direction(frame_previous: FrameData, frame_
 
 	var position_change_direction := (frame_current.practice_position - frame_previous.practice_position).normalized()
 	var dot_product := frame_previous.correct_input_direction.normalized().dot(position_change_direction)
+
 	return abs(dot_product - 1.0) < 0.1
 
 
