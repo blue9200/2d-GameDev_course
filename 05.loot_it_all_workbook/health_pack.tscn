@@ -4,7 +4,7 @@
 [ext_resource type="Script" path="res://health_pack.gd" id="1_mff1c"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_xbw2l"]
-radius = 32.1403
+radius = 30.0
 
 [node name="HealthPack" type="Area2D"]
 script = ExtResource("1_mff1c")
@@ -15,5 +15,5 @@ scale = Vector2(1.20834, 1.20833)
 texture = ExtResource("1_0qxru")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(938, 555)
+position = Vector2(938, 554)
 shape = SubResource("CircleShape2D_xbw2l")
