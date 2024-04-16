@@ -54,5 +54,3 @@ func set_health(new_health: int) -> void:
 func _on_area_entered(area_that_entered: Area2D) -> void:
 #ANCHOR: health_increase
 	set_health(health + 10)
-#END: health_increase
-#END: _on_area_entered

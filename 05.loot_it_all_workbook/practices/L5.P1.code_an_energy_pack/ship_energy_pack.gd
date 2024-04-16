@@ -6,7 +6,6 @@ var steering_factor := 10.0
 
 var energy := 20.0
 
-
 func _ready() -> void:
 	get_node("UI/EnergyBar").value = energy
 
@@ -22,6 +21,6 @@ func _process(delta: float) -> void:
 	if velocity.length() > 0.0:
 		get_node("Sprite2D").rotation = velocity.angle()
 
-
 func _on_area_entered(area: Area2D) -> void:
-	pass
+	energy += 20.0
+	get_node("UI/EnergyBar").value = energy
