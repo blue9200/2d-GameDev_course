@@ -1,18 +1,18 @@
-[gd_scene load_steps=4 format=3 uid="uid://c7hc42tytuimo"]
+[gd_scene load_steps=4 format=3 uid="uid://n26j6lm0nift"]
 
-[ext_resource type="Texture2D" uid="uid://dknpi2mq4dhpa" path="res://assets/health_icon.svg" id="1_0qxru"]
-[ext_resource type="Script" path="res://item.gd" id="1_74we0"]
+[ext_resource type="Script" path="res://item.gd" id="1_tqjk4"]
+[ext_resource type="Texture2D" uid="uid://d0bh8am2qd005" path="res://assets/gem_icon.png" id="2_f2bgo"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_xbw2l"]
 radius = 30.0
 
-[node name="HealthPack" type="Area2D" groups=["healing_item"]]
-script = ExtResource("1_74we0")
+[node name="Gem" type="Area2D" groups=["gem"]]
+script = ExtResource("1_tqjk4")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(937, 554)
 scale = Vector2(1.20834, 1.20833)
-texture = ExtResource("1_0qxru")
+texture = ExtResource("2_f2bgo")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(938, 554)
