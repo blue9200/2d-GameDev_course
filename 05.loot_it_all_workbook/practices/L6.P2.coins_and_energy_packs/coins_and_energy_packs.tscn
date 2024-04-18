@@ -1,10 +1,10 @@
 [gd_scene load_steps=4 format=3 uid="uid://bv05ueqh8m8l"]
 
-[ext_resource type="PackedScene" path="res://practices/L6.P2.coins_and_energy_packs/ship_coins_and_energy_packs.tscn" id="1_l7py2"]
-[ext_resource type="PackedScene" path="res://practices/L6.P2.coins_and_energy_packs/coin.tscn" id="3_v6eww"]
-[ext_resource type="PackedScene" path="res://practices/L6.P2.coins_and_energy_packs/energy_pack.tscn" id="5_4aryi"]
+[ext_resource type="PackedScene" uid="uid://d28hq5p2pjocs" path="res://practices/L6.P2.coins_and_energy_packs/ship_coins_and_energy_packs.tscn" id="1_l7py2"]
+[ext_resource type="PackedScene" uid="uid://6ai8pfu354iy" path="res://practices/L6.P2.coins_and_energy_packs/coin.tscn" id="3_v6eww"]
+[ext_resource type="PackedScene" uid="uid://4wx54t2yi5ko" path="res://practices/L6.P2.coins_and_energy_packs/energy_pack.tscn" id="5_4aryi"]
 
-[node name="CoinsAndEnergyPacks" type="Node2D"]
+[node name="CoinsAndEnergyPacks" type="Node2D" groups=["coin"]]
 
 [node name="Ship" parent="." instance=ExtResource("1_l7py2")]
 position = Vector2(962, 534)

@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://lmhiadgmppjf"]
+
+[node name="RandomItemPlacer" type="Node2D"]
+
+[node name="Timer" type="Timer" parent="."]
+autostart = true
