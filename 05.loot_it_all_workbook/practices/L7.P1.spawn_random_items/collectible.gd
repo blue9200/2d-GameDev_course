@@ -1,16 +1,9 @@
-extends Node2D
-
-var collectible_scenes := [
-	preload("coin.tscn"), 
-	preload("energy_pack.tscn")
-]
+extends Area2D
 
 
 func _ready() -> void:
-	get_node("Timer").timeout.connect(_on_timer_timeout)
+	area_entered.connect(_on_area_entered)
 
 
-func _on_timer_timeout() -> void:
-	var random_item_scene: PackedScene = collectible_scenes.pick_random()
-	var item_instance := random_item_scene.instantiate()
-	add_child(item_instance)
+func _on_area_entered(area_that_entered: Area2D) -> void:
+	queue_free()

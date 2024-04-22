@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://ctkjwtykoqof4"]
+[gd_scene load_steps=3 format=3 uid="uid://ci3eiwnvjygf6"]
 
 [ext_resource type="PackedScene" path="res://practices/L6.P1.create_coins/ship_create_coins.tscn" id="1_x2knq"]
+[ext_resource type="PackedScene" uid="uid://pjsj8tfnfhe8" path="res://practices/L6.P1.create_coins/coin.tscn" id="2_81iyn"]
 
 [node name="CreateCoins" type="Node2D"]
 
@@ -23,3 +24,15 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 color = Color(0.219608, 0.317647, 0.776471, 1)
+
+[node name="Coin" parent="." instance=ExtResource("2_81iyn")]
+position = Vector2(772, 395)
+
+[node name="Coin2" parent="." instance=ExtResource("2_81iyn")]
+position = Vector2(740, 838)
+
+[node name="Coin3" parent="." instance=ExtResource("2_81iyn")]
+position = Vector2(1316, 252)
+
+[node name="Coin4" parent="." instance=ExtResource("2_81iyn")]
+position = Vector2(1404, 717)

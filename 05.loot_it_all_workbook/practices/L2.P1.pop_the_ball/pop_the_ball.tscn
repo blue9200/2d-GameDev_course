@@ -1,6 +1,6 @@
-[gd_scene load_steps=3 format=3 uid="uid://rctd0ikxxanx"]
+[gd_scene load_steps=3 format=3 uid="uid://b82my5b0eyloh"]
 
-[ext_resource type="PackedScene" uid="uid://sveyl28byoch" path="res://practices/L2.P1.pop_the_ball/ball.tscn" id="1_nyxov"]
+[ext_resource type="PackedScene" uid="uid://d0p58bwr0y8st" path="res://practices/L2.P1.pop_the_ball/ball.tscn" id="1_nyxov"]
 [ext_resource type="PackedScene" path="res://practices/L2.P1.pop_the_ball/needle.tscn" id="3_w8ucv"]
 
 [node name="PopTheBall" type="Node2D"]
