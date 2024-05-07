@@ -19,14 +19,16 @@ func _input_event(viewport: Node, event: InputEvent, shape_index: int):
 
 func spawn_candy() -> void:
 	# You have to loop 3 times over the next lines of code!
-	for current_index in range(0):
+	for current_index in range(3):  # for current_index in range(0):
 		# Complete the variables to calculate a random position in a circle using polar coordinates.
-		var radius := 0.0
-		var angle := 0.0
+		var radius := randf_range(0.0, 100.0)  # var radius := 0.0
+		var angle := randf_range(0.0, 2.0 * PI)  # var angle := 0.0
 
-		var random_direction := Vector2()
-		var random_position := Vector2()
+		var random_direction := Vector2(1.0, 0.0).rotated(angle)  # var random_direction := Vector2()
+		var random_position := (radius * random_direction)  # var random_position := Vector2()
 
 		# Instantiate and add the candy as a child of the piñata.
 		const CANDY_PACKED_SCENE := preload("candy/candy.tscn")
-		var candy: Node2D = null
+		var candy: Node2D = CANDY_PACKED_SCENE.instantiate()  # var candy: Node2D = null
+		add_child(candy)  #
+		candy.position = random_position  #

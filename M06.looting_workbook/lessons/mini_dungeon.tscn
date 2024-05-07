@@ -6,7 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://c1rgncfgjxefj" path="res://assets/dungeon/pillar.png" id="4_gq228"]
 [ext_resource type="Texture2D" uid="uid://l0y1k1obencd" path="res://assets/dungeon/spider_web.png" id="5_ywba7"]
 [ext_resource type="PackedScene" uid="uid://eundh35r605v" path="res://assets/torch/torch.tscn" id="6_fokey"]
-[ext_resource type="PackedScene" uid="uid://dm6fpw61ddmun" path="res://chest.tscn" id="7_kw6ax"]
+[ext_resource type="PackedScene" uid="uid://dm6fpw61ddmun" path="res://lessons/chest.tscn" id="7_kw6ax"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6s4s5"]
 texture = ExtResource("1_sym7n")
